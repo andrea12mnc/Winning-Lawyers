@@ -18,6 +18,9 @@ body {
     background-color: var(--primary-color);
     color: var(--text-color);
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -55,18 +58,18 @@ p {
 }
 
 section {
-    padding: 60px 0;
+    padding: 36px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Header Section */
 #header {
-    padding: 60px 0;
+    padding: 28px 0 18px 0; /* meno spazio sopra e sotto */
     text-align: center;
 }
 
 .logo-container {
-    margin-bottom: 30px;
+    margin-bottom: 12px; /* meno spazio sotto il logo */
 }
 
 .logo {
@@ -132,9 +135,10 @@ section {
 }
 
 /* Call to Action Sections */
-#cta, #cta-second {
+#cta, #cta-second, #video, #for-you, #not-for-you {
     text-align: center;
-    padding: 50px 0;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .cta-button {
@@ -252,6 +256,10 @@ h2 { transition-delay: 0.2s; }
         font-size: 1.1rem;
     }
     
+    .logo-container {
+        margin-bottom: 8px; /* ancora meno spazio su mobile/tablet */
+    }
+    
     .bullet-points {
         flex-direction: column;
     }
@@ -274,7 +282,7 @@ h2 { transition-delay: 0.2s; }
     }
     
     section {
-        padding: 40px 0;
+        padding: 22px 0;
     }
     
     .cta-button {
@@ -298,6 +306,9 @@ h2 { transition-delay: 0.2s; }
     
     .logo {
         max-width: 150px;
+    }
+    .logo-container {
+        margin-bottom: 4px; /* minimo spazio su mobile piccolo */
     }
     
     .cta-button {
