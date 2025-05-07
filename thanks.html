@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Immigration Lawyer Partnership</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Stili specifici per la pagina di ringraziamento */
+        .thanks-container {
+            padding: 30px 0;
+            min-height: 350px;
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .thanks-title {
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease forwards;
+        }
+        
+        .thanks-message {
+            margin: 0 auto 40px;
+            max-width: 700px;
+            line-height: 1.8;
+            font-size: 1.2rem;
+            opacity: 0.9;
+            animation: fadeInUp 1.2s ease forwards;
+        }
+        
+        /* Stile per il pulsante WhatsApp */
+        .whatsapp-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 30px;
+            background-color: #25D366; /* Colore ufficiale di WhatsApp */
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+            transition: transform 0.3s;
+            animation: pulse 2s infinite, glowing 3s infinite;
+        }
+        
+        .whatsapp-button i {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        
+        .whatsapp-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+        }
+        
+        /* Animazioni */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes glowing {
+            0% { box-shadow: 0 0 10px rgba(37, 211, 102, 0.6); }
+            50% { box-shadow: 0 0 20px rgba(37, 211, 102, 0.9); }
+            100% { box-shadow: 0 0 10px rgba(37, 211, 102, 0.6); }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Effetto shine sul pulsante */
+        .whatsapp-button:after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to right, 
+                rgba(255, 255, 255, 0) 0%, 
+                rgba(255, 255, 255, 0.3) 50%, 
+                rgba(255, 255, 255, 0) 100%
+            );
+            transform: rotate(45deg);
+            animation: shine 3s infinite;
+        }
+        
+        @keyframes shine {
+            0% { left: -100%; }
+            20% { left: 100%; }
+            100% { left: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header id="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/logo.jpg" alt="Law Firm Logo" class="logo">
+            </div>
+        </div>
+    </header>
+
+    <!-- THANKS SECTION -->
+    <section id="thanks">
+        <div class="container">
+            <div class="thanks-title">
+                <h1>Thank You for Completing the Quiz!</h1>
+            </div>
+            <div class="thanks-container">
+                <div class="thanks-message">
+                    <p>Thank you for completing the quiz. We'll get back to you as soon as possible.</p>
+                    <p>Given the high number of requests we're receiving, you can use the link below to contact me directly on WhatsApp.</p>
+                </div>
+                
+                <!-- Video Loom embedded -->
+                <div class="video-loom-container" style="margin: 20px 0 30px; width: 100%; max-width: 650px;">
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0; border-radius: 8px; overflow: hidden; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);">
+                        <iframe src="https://www.loom.com/embed/e99f3d50b6ce45409b6bbca43f037d9e?sid=3ba407d3-e0be-4236-922a-c2399bd1d406" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                    </div>
+                </div>
+                
+                <a href="https://wa.me/351914174562?text=Hi%20i'd%20like%20to%20request%20priority%20for%20the%20potential%20partnership" class="whatsapp-button">
+                    <i class="fab fa-whatsapp"></i> Request Priority
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer id="footer">
+        <div class="container">
+            <p style="margin-bottom: 10px;">&copy; 2025 BORA MEDIA LLC. All rights reserved.</p>
+            <p style="margin-bottom: 10px;">Privacy Policy | BORA MEDIA LLC - 16192 Coastal Highway, Lewes, Delaware 19958 | EIN: 37-2112369</p>
+            <p style="margin-bottom: 10px;">This offer is available for a limited time to qualified immigration lawyers in Portugal.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
