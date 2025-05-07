@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immigration Lawyer Quiz</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Stili specifici per la pagina del quiz */
+        .quiz-container {
+            padding: 60px 0;
+            min-height: 500px;
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .quiz-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .quiz-title h1 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            animation: fadeInUp 1s ease forwards;
+        }
+        
+        .quiz-title p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            animation: fadeInUp 1.2s ease forwards;
+        }
+        
+        [data-tf-live] {
+            width: 100%;
+            height: 600px;
+            animation: fadeIn 1.5s ease forwards;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header id="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/logo.jpg" alt="Law Firm Logo" class="logo">
+            </div>
+        </div>
+    </header>
+
+    <!-- QUIZ SECTION -->
+    <section id="quiz">
+        <div class="container">
+            <div class="quiz-title">
+                <h1>Complete the Quiz to Apply 👇</h1>
+                <p>We don't accept everyone. We will check if you qualify</p>
+            </div>
+            <div class="quiz-container">
+                <div data-tf-live="01HCJFXZ4HR0EXSC4Q226DR0ZR"></div>
+                <script src="https://embed.typeform.com/next/embed.js"></script>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer id="footer">
+        <div class="container">
+            <p>&copy; 2025 Immigration Lawyer Partnership. All rights reserved.</p>
+            <p>This offer is available for a limited time to qualified immigration lawyers in Portugal.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
