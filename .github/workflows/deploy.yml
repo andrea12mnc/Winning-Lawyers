@@ -1,0 +1,22 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write  # Autorizzazione esplicita per scrivere sul repository
+    
+            
+      # Usa un'azione più affidabile per il deploy su gh-pages
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: ./   # La cartella da pubblicare
+          branch: gh-pages    # Il branch di destinazione
+          clean: true         # Rimuove i file che non fanno parte della build
