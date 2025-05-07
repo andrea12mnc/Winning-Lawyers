@@ -1,26 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Video placeholder functionality
-    const videoPlaceholder = document.querySelector('.video-container');
-    const playButton = document.querySelector('.play-button');
-    
-    if (videoPlaceholder && playButton) {
-        videoPlaceholder.addEventListener('click', function() {
-            // This would normally load the actual YouTube video
-            // For now, we'll just show an alert as a placeholder
-            alert('Video would play here. Replace with actual YouTube embed in production.');
-            
-            // In production, you would replace the image with an iframe like this:
-            // const iframe = document.createElement('iframe');
-            // iframe.src = 'https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1';
-            // iframe.width = '100%';
-            // iframe.height = '100%';
-            // iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-            // iframe.allowFullscreen = true;
-            // 
-            // videoPlaceholder.innerHTML = '';
-            // videoPlaceholder.appendChild(iframe);
-        });
-    }
+    // Video è già incorporato come iframe YouTube
     
     // Smooth scrolling for all anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
