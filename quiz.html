@@ -9,9 +9,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         /* Stili specifici per la pagina del quiz */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        #header {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            height: auto;
+        }
+        
+        #footer {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            height: auto;
+        }
+        
+        section#quiz {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0;
+        }
+        
         .quiz-container {
-            padding: 60px 0;
-            min-height: 500px;
+            padding: 30px 0;
+            min-height: 540px;
             background-color: var(--secondary-color);
             border-radius: 10px;
             margin: 20px 0;
@@ -23,7 +49,7 @@
         
         .quiz-title {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         
         .quiz-title h1 {
@@ -40,7 +66,7 @@
         
         [data-tf-live] {
             width: 100%;
-            height: 600px;
+            height: 500px;
             animation: fadeIn 1.5s ease forwards;
         }
         
@@ -79,12 +105,18 @@
     <section id="quiz">
         <div class="container">
             <div class="quiz-title">
-                <h1>Complete the Quiz to Apply 👇</h1>
+                <h1>Complete the Quiz to Apply In 2 Minutes 👇</h1>
                 <p>We don't accept everyone. We will check if you qualify</p>
             </div>
             <div class="quiz-container">
-                <div data-tf-live="01HCJFXZ4HR0EXSC4Q226DR0ZR"></div>
-                <script src="https://embed.typeform.com/next/embed.js"></script>
+                <!-- Implementazione semplice con iframe diretto al nuovo link -->
+                <iframe id="typeform-embed" width="100%" height="500" 
+                    src="https://form.typeform.com/to/LkBe1Sww" 
+                    frameborder="0" allow="camera; microphone; autoplay; encrypted-media;"
+                    style="border: none;"></iframe>
+                
+                <!-- Area per spazio aggiuntivo se necessario -->
+                <div style="height:10px;"></div>
             </div>
         </div>
     </section>
@@ -92,9 +124,9 @@
     <!-- FOOTER SECTION -->
     <footer id="footer">
     <div class="container">
-        <p>&copy; 2025 BORA MEDIA LLC. All rights reserved.</p>
-        <p>Privacy Policy | BORA MEDIA LLC - 16192 Coastal Highway, Lewes, Delaware 19958 | EIN: 37-2112369</p>
-        <p>This offer is available for a limited time to qualified immigration lawyers in Portugal.</p>
+        <p style="margin-bottom: 10px;">&copy; 2025 BORA MEDIA LLC. All rights reserved.</p>
+        <p style="margin-bottom: 10px;">Privacy Policy | BORA MEDIA LLC - 16192 Coastal Highway, Lewes, Delaware 19958 | EIN: 37-2112369</p>
+        <p style="margin-bottom: 10px;">This offer is available for a limited time to qualified immigration lawyers in Portugal.</p>
     </div>
 </footer>
 
